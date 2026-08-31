@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <p id="start-text">
+            Generate a <br>
+            <span id="green-style">random password</span>
+        </p>
+        <p id="extra-text">Never use an insecure password again.</p>
+
+        <button id="generate-btn" onclick="generatePass()">Generate Passwords</button>
+        <hr>
+        <div id="passwords">
+            <input type="text" id="pass-1" readonly>
+            <input type="text" id="pass-2" readonly>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!--
+-> Generate two random passwords when user clicks button
+-> Each password should be 15 characters long
+
+---
+
+-> ability to set password length
+-> Add "copy-on-click"
+-> Toggle "symbols" and "numbers" on/off
+-->
